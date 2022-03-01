@@ -1,0 +1,10 @@
+﻿.col-2 {
+    flex-basis: 50%;
+    min-width: 30px;
+}
+
+    .col-2 img {
+        width: 75%;
+        margin-left: 120px;
+        padding: 50px 0;
+    }

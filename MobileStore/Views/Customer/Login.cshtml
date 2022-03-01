@@ -1,0 +1,13 @@
+﻿@model MobileStore.Models.Customer
+    <link href="~/Css/StyleSheet1.css" rel="stylesheet"/>
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+<form method="post" action="@Url.Action("Login","Customer")">
+    <input type="text" placeholder="Enter Your Username" name="Username" />
+    <input type="password" placeholder="Enter Your Password" name="Password" />
+    <input type="submit" value="Login" />
+</form>

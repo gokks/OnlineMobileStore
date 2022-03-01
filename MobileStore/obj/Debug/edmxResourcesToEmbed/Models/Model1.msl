@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Mobile_StoreEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="Model.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="Categories_Id" ColumnName="Categories Id" />
+          <ScalarProperty Name="Categories_Name" ColumnName="Categories Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Model.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Customer_Id" ColumnName="Customer Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mail_Id" ColumnName="Mail Id" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone Number" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Details">
+      <EntityTypeMapping TypeName="Model.Detail">
+        <MappingFragment StoreEntitySet="Details">
+          <ScalarProperty Name="Details_Id" ColumnName="Details Id" />
+          <ScalarProperty Name="Product_Id" ColumnName="Product Id" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Warenty" ColumnName="Warenty" />
+          <ScalarProperty Name="Buy" ColumnName="Buy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="My_Orders">
+      <EntityTypeMapping TypeName="Model.My_Order">
+        <MappingFragment StoreEntitySet="My Order">
+          <ScalarProperty Name="Order_Id" ColumnName="Order Id" />
+          <ScalarProperty Name="Product_Id" ColumnName="Product Id" />
+          <ScalarProperty Name="Categories_Id" ColumnName="Categories Id" />
+          <ScalarProperty Name="Details_Id" ColumnName="Details Id" />
+          <ScalarProperty Name="Payment_Id" ColumnName="Payment Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payment_Details">
+      <EntityTypeMapping TypeName="Model.Payment_Detail">
+        <MappingFragment StoreEntitySet="Payment Details">
+          <ScalarProperty Name="Payment_Id" ColumnName="Payment Id" />
+          <ScalarProperty Name="Details_Id" ColumnName="Details Id" />
+          <ScalarProperty Name="Product_Count" ColumnName="Product Count" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="Model.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Product_Id" ColumnName="Product Id" />
+          <ScalarProperty Name="Categorie_Id" ColumnName="Categorie Id" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product Name" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
